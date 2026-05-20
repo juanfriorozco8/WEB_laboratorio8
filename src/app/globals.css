@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: 'Georgia', serif;
   background-color: #faf9f7;
   color: #1c1917;
@@ -43,7 +43,6 @@ a {
 .nav-links a {
   color: #78716c;
   font-size: 0.9rem;
-  font-family: 'Georgia', serif;
 }
 
 .nav-links a:hover {
@@ -60,6 +59,22 @@ a {
   border-top: 1px solid #e7ddd4;
 }
 
+/* SHARED */
+.home-label {
+  color: #a8896c;
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.home-divider {
+  width: 40px;
+  height: 2px;
+  background-color: #a8896c;
+  margin-bottom: 2rem;
+}
+
 /* HOME */
 .home-section {
   min-height: 90vh;
@@ -73,15 +88,6 @@ a {
 .home-container {
   max-width: 780px;
   width: 100%;
-}
-
-.home-label {
-  color: #a8896c;
-  font-size: 0.78rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-family: 'Georgia', serif;
 }
 
 .home-title {
@@ -107,13 +113,6 @@ a {
   max-width: 560px;
 }
 
-.home-divider {
-  width: 40px;
-  height: 2px;
-  background-color: #a8896c;
-  margin-bottom: 1.8rem;
-}
-
 .tech-grid {
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +127,6 @@ a {
   padding: 0.35rem 0.9rem;
   border-radius: 4px;
   font-size: 0.82rem;
-  font-family: 'Georgia', serif;
 }
 
 .home-buttons {
@@ -144,7 +142,6 @@ a {
   border-radius: 6px;
   font-weight: 600;
   font-size: 0.9rem;
-  font-family: 'Georgia', serif;
 }
 
 .btn-secondary {
@@ -155,7 +152,6 @@ a {
   border-radius: 6px;
   font-weight: 600;
   font-size: 0.9rem;
-  font-family: 'Georgia', serif;
 }
 
 .btn-primary:hover {
@@ -164,4 +160,63 @@ a {
 
 .btn-secondary:hover {
   background-color: #f5f0eb;
+}
+
+/* PAGES */
+.page-section {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 3rem;
+  background-color: #faf9f7;
+}
+
+.page-container {
+  max-width: 780px;
+  width: 100%;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.page-text {
+  color: #44403c;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+  max-width: 620px;
+}
+
+/* SOBRE MI */
+.sobre-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.sobre-card {
+  background: #f5f0eb;
+  border: 1px solid #e7ddd4;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.sobre-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sobre-list li {
+  color: #57534e;
+  font-size: 0.9rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid #a8896c;
 }
